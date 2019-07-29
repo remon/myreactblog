@@ -103,6 +103,15 @@ set(:symlinks, [
 # and when for `cap stage deploy`
 
 namespace :deploy do
+  task :yarn_deploy do
+    on roles fetch(:yarn_roles) do
+      within fetch(:yarn_target_path, release_path) do
+        execute fetch(:yarn_bin), "build"
+      end
+    end
+  end
+
+  before "symlink:release", :yarn_deploy
   # make sure we're deploying what we think we're deploying
   before :deploy, "deploy:check_revision"
   # only allow a deploy with passing tests to deployed
