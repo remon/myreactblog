@@ -1,13 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import envColor1Img from 'images/env_color1.png';
+import { iconPath } from '../helpers/image_path';
+
 class ContactRight extends React.Component {
   render() {
     return (
       <div className='col-md-6 col-sm-12'>
         <div className='right_contact'>
           <div className='centery'>
-            <img src={envColor1Img} className='env_img' />
+            <img src={iconPath('./env_color1.png')} className='env_img' />
           </div>
 
           <div>

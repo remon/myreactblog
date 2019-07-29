@@ -3,7 +3,7 @@
     "name": "Sho7elw",
     "desc": " An E-commerce Web Site ",
     "link": "http://www.sho7elw.com",
-    "image": "/assets/sho1.png",
+    "image": "./sho1.png",
     "techs": [
       " Ruby on Rails ",
       "jQuery",
@@ -17,7 +17,7 @@
     "name": "Arouwad",
     "desc": " News and Media Website",
     "link": "http://www.arouwad.net",
-    "image": "/assets/aro1.png",
+    "image": "./aro1.png",
     "techs": [
       " Ruby on Rails ",
       "jQuery",
@@ -32,21 +32,21 @@
     "name": "Visit Hurghada",
     "desc": " Safari and Excursions Website",
     "link": "http://www.visithurghada",
-    "image": "/assets/visit1.jpg",
+    "image": "./visit1.jpg",
     "techs": [" Ruby on Rails ", "jQuery", "Bootstrap", "PostgreSql", "Nginx"]
   },
   {
     "name": "Python Codes",
     "desc": " An Open Source Project for OMAC Students",
     "link": "https://github.com/remon/pythonCodes",
-    "image": "/assets/pythoncodes.png",
+    "image": "./pythoncodes.png",
     "techs": ["Python", "Git", "Github"]
   },
   {
     "name": "PEARL NTEC",
     "desc": "  A company portfolio website (2014)",
     "link": "https://pearlntec.com",
-    "image": "/assets/pearl.png",
+    "image": "./pearl.png",
     "techs": ["PHP", "jQuery", "Git", "Heroku", "Github"]
   }
 ]

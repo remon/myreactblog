@@ -1,10 +1,10 @@
-import React from "react";
-
+import React from 'react';
+import { iconPath } from '../helpers/image_path';
 const ProjectItem = ({ item }) => {
   return (
-    <div className="sub_site_list">
-      <a href={item.link} target="_blank">
-        <img src={item.image} />
+    <div className='sub_site_list'>
+      <a href={item.link} target='_blank'>
+        <img src={iconPath(item.image)} />
 
         <h5>{item.name}</h5>
 
