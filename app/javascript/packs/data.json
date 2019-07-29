@@ -31,7 +31,7 @@
   {
     "name": "Visit Hurghada",
     "desc": " Safari and Excursions Website",
-    "link": "http://www.visithurghada",
+    "link": "http://www.visithurghada.org",
     "image": "./visit1.jpg",
     "techs": [" Ruby on Rails ", "jQuery", "Bootstrap", "PostgreSql", "Nginx"]
   },
