@@ -4,7 +4,7 @@ lock "3.11.0"
 set :application, "myblog"
 #set :pty, true
 set :full_app_name, "myblog"
-set :repo_url, "git@github.com:remon/myblogreact.git"
+set :repo_url, "git@github.com:remon/myreactblog.git"
 set :branch, "master"
 
 # Default branch is :master
