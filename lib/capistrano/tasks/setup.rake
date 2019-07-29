@@ -7,5 +7,4 @@ namespace :setup do
       sudo :chmod, "600", "#{shared_path}/config/master.key"
     end
   end
-  before "deploy:symlink:linked_files", "setup:copy_linked_master_key"
 end
