@@ -101,23 +101,38 @@ set(:symlinks, [
 # http://www.capistranorb.com/documentation/getting-started/flow/
 # is worth reading for a quick overview of what tasks are called
 # and when for `cap stage deploy`
-
-namespace :deploy do
-  task :yarn_deploy do
-    on roles fetch(:yarn_roles) do
-      within fetch(:yarn_target_path, release_path) do
-        execute fetch(:yarn_bin), "build"
+namespace :yarn do
+  desc "Install yarn dependencies"
+  task :install do
+    on roles(:app) do
+      within release_path do
+        execute :yarn, :install
       end
     end
   end
 
-  before "symlink:release", :yarn_deploy
+  desc "yarn dependencies"
+  task :build do
+    on roles(:app) do
+      within release_path do
+        with node_env: :production do
+          execute :yarn, :build
+        end
+      end
+    end
+  end
+end
+namespace :deploy do
+  before :updated, "yarn:install"
+  before :updated, "yarn:build"
+  #before "deploy:assets:precompile", "deploy:yarn_install"
+
   # make sure we're deploying what we think we're deploying
   before :deploy, "deploy:check_revision"
   # only allow a deploy with passing tests to deployed
   before :deploy, "deploy:run_tests"
   # compile assets locally then rsync
-  after "deploy:symlink:shared", "deploy:compile_assets_locally"
+  #after "deploy:symlink:shared", "deploy:compile_assets_locally"
   after :finishing, "deploy:cleanup"
 
   # remove the default nginx configuration as it will tend
