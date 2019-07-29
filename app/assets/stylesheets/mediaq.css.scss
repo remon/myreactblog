@@ -1,0 +1,63 @@
+@media (max-width: 575.98px) {
+    #contact label {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    #contact .col-md-12 {
+        padding: 0px;
+    }
+
+    .skills-main {
+
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .sub_site_list {
+        width: 98%;
+    }
+
+    .myp {
+        font-size: 1.5em;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+        line-height: 40px;
+    }
+
+    .right_contact {
+        margin-top: 30px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #contact label {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    #contact .col-md-12 {
+        padding: 0px;
+    }
+
+    .sub_site_list {
+        width: 48%;
+        height:400px;
+    }
+    #contact{
+        margin-bottom: 50px;
+    }
+.right_contact{
+    margin-top: 40px;
+
+}
+    .myp {
+        font-size: 1.5em;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+        line-height: 40px;
+    }
+}
