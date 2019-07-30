@@ -43,10 +43,10 @@
     "techs": ["Python", "Git", "Github"]
   },
   {
-    "name": "PEARL NTEC",
-    "desc": "  A company portfolio website (2014)",
-    "link": "https://pearlntec.com",
-    "image": "./pearl.png",
-    "techs": ["PHP", "jQuery", "Git", "Heroku", "Github"]
+    "name": "DowInsta",
+    "desc": " Download instagram photos/videos easily ",
+    "link": "http://dowinsta.com",
+    "image": "./dowinsta.png",
+    "techs": [" Ruby on Rails ", "jQuery", "Bootstrap", "Nokogiri", "Nginx"]
   }
 ]
