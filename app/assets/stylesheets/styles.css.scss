@@ -1,6 +1,5 @@
 .nmt {
   font-family: 'Niramit', sans-serif;
-
 }
 
 .openco {
@@ -9,7 +8,6 @@
 }
 
 .reo_nav {
-
   li {
     float: left;
     list-style: none;
@@ -69,11 +67,10 @@
       text-decoration: none;
 
       &:hover {
-        border-top: 4px solid #5175C0;
-        border-bottom: 4px solid #5175C0;
+        border-top: 4px solid #5175c0;
+        border-bottom: 4px solid #5175c0;
         padding: 6px 0;
       }
-
     }
   }
 }
@@ -116,19 +113,22 @@
 }
 
 a.ig {
-  color: #C90887 !important;
+  color: #c90887 !important;
 }
 
 a.fb {
-  color: #3A5794 !important;
+  color: #3a5794 !important;
 }
 
 a.twt {
-  color: #1C9CEB !important;
+  color: #1c9ceb !important;
 }
 
 a.stk {
-  color: #EC7C23 !important;
+  color: #ec7c23 !important;
+}
+a.aws {
+  color: black !important;
 }
 
 .skills-main {
@@ -139,13 +139,13 @@ a.stk {
 
 .skills-bar {
   width: 0%;
-  background: #34799E;
+  background: #34799e;
   height: 25px;
   border-radius: 5px;
 }
 
 .skills-wrapper {
-  background: #EEEEEE;
+  background: #eeeeee;
   margin: 5px;
   border-radius: 5px;
   margin-top: 30px;
@@ -201,11 +201,9 @@ a.stk {
   }
 }
 
-
 #contact {
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
 
 .hig {
@@ -239,7 +237,7 @@ a.stk {
 }
 
 .footer {
-  background: #34799E;
+  background: #34799e;
   padding: 20px 0px;
   margin-top: 40px;
   color: white;

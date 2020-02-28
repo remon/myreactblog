@@ -10,12 +10,26 @@ class TopIntro extends React.Component {
           <img src={iconPath('./myimg.png')} className='myimg' />
 
           <p className='centery myp'>
-            A full-Stack Web Developer from Egypt , I love coding , also I love
-            teaching young people about web development
+            <a
+              href='https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2020-02-15&ci=AWS00823947'
+              target='blank'
+            >
+              AWS Certified Developer
+            </a>
+            , A full-Stack Web Developer from Egypt , I love coding , also I
+            love teaching young people about web development
           </p>
 
           <div className='social-links'>
             <ul>
+              <li>
+                <a
+                  href='https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2020-02-15&ci=AWS00823947'
+                  className='aws'
+                >
+                  <i className='fab fa-aws' />
+                </a>
+              </li>
               <li>
                 <a
                   href='https://stackoverflow.com/users/2087775/remon-amin'
